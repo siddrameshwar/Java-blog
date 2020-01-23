@@ -4,6 +4,21 @@ You can use the [editor on GitHub](https://github.com/siddrameshwar/blog/edit/ma
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+### Java tutorials
+
+Iterating through a map
+---markdown
+Map<String, String> map = new HashMap<>();
+map.put("Country", "England");
+map.put("Name", "Henry");
+map.put("City", "London");
+
+for(MapEntry entry: map.entrySet()) {
+    System.out.println("key " + entry.getKey() + " value " + entry.getValue());
+}
+
+---markdown
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
