@@ -17,7 +17,7 @@ for(MapEntry entry: map.entrySet()) {
     System.out.println("key " + entry.getKey() + " value " + entry.getValue());
 }
 
-```markdown
+```
 
 ### Markdown
 
