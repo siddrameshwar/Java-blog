@@ -7,7 +7,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ### Java tutorials
 
 Iterating through a map
----markdown
+```markdown
 Map<String, String> map = new HashMap<>();
 map.put("Country", "England");
 map.put("Name", "Henry");
@@ -17,7 +17,7 @@ for(MapEntry entry: map.entrySet()) {
     System.out.println("key " + entry.getKey() + " value " + entry.getValue());
 }
 
----markdown
+```markdown
 
 ### Markdown
 
