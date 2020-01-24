@@ -30,7 +30,7 @@ Syntax highlighted code block
 ## Header 2
 ### Header 3
 
-[comment]: <>- (Bulleted)
+[comment]: <> (Bulleted)
 - List
 
 1. Numbered
