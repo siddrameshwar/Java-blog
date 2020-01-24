@@ -28,6 +28,23 @@ intList.forEach(System.out::print);
         
 Output: 245
 ```
+
+### Converting Integer ArrayList to int Array
+```markdown
+List<Integer> intList = new ArrayList<Integer>();
+intList.add(44);
+intList.add(25);
+intList.add(33);
+
+int[] intArray = new int[intList.size()];
+for(int i = 0; i < intArray.length; i++)
+    intArray[i] = intList.get(i);
+    
+for(int val: intArray)
+    System.out.print(val + " ");
+                                   
+output: 44 25 33                                
+```
 <!--
 ### Markdown
 
