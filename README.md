@@ -26,7 +26,7 @@ for(int val: intArray)
     intList.add(val);
 intList.forEach(System.out::print);
         
-        Output: 245
+Output: 245
 ```
 <!--
 ### Markdown
