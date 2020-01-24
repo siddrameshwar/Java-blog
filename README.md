@@ -6,7 +6,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 -->
 
 
-Iterating through a Map
+### Iterating through a Map
 ```markdown
 Map<String, String> map = new HashMap<>();
 map.put("Country", "England");
@@ -18,7 +18,7 @@ for(MapEntry entry: map.entrySet()) {
 }
 
 ```
-Converting int Array to ArrayList
+### Converting int Array to ArrayList
 ```markdown
 int[] intArray = {2,4,5};
 List<Integer> intList = new ArrayList<Integer>(intArray.length);
