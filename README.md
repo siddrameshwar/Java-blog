@@ -9,13 +9,17 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ### Iterating through a Map
 ```markdown
 Map<String, String> map = new HashMap<>();
-map.put("Country", "England");
 map.put("Name", "Henry");
+map.put("Country", "England");
 map.put("City", "London");
 
-for(MapEntry entry: map.entrySet()) {
-    System.out.println("key " + entry.getKey() + " value " + entry.getValue());
+for(Map.Entry entry: map.entrySet()) {
+    System.out.println(entry.getKey() + " -> " + entry.getValue());
 }
+
+output: Country -> England                                                                                                       
+        City -> London                                                                                                           
+        Name -> Henry
 
 ```
 ### Converting int Array to ArrayList
