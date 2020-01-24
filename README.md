@@ -18,6 +18,16 @@ for(MapEntry entry: map.entrySet()) {
 }
 
 ```
+Converting int Array to ArrayList
+```markdown
+        int[] intArray = {2,4,5};
+		List<Integer> intList = new ArrayList<Integer>(intArray.length);
+		for(int val: intArray)
+		    intList.add(val);
+		intList.forEach(System.out::print);
+        
+        Output: 245
+```
 <!--
 ### Markdown
 
