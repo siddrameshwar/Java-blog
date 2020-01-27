@@ -72,6 +72,39 @@ Important points about Java
 ●	public void myDraw(Shape shape) { shape.draw() }; We can pass any Shape objects or any of its children objects.
 
 
+Spring
+
+What does Spring framework provides?
+Application context and dependency injection
+Data access(JDBC was pain)
+Spring MVC
+Dependency injection -> A way in which you decouple the conventional dependency relations between objects.
+Spring can integrate with hibernate and struts.
+Spring boot is a layer on top of Spring framework. It reduces configuration part for developers.
+If we are using just spring, we would have to deploy the war file on to a separate server(tomcat) to run the application. But it spring boot we would have jar file instead of war file and it will have embedded server in it. You can run this on any JVM.
+Spring will provide -> spring-boot-starter-web or spring-boot-starter-jdbc. Spring boot will do the configuration for you. If we want to change configuration we will have to change application.properties
+Dependency injection container
+@Component class HitachiHD implements HardDrive{...}
+class Laptop { @Autowired HardDrive obj1;}
+Dependency injection will help in loose coupling and aides in unit testing.
+
+
+Spring
+
+●	What does Spring framework provides?
+○	Application context and dependency injection
+○	Data access(JDBC was pain)
+○	Spring MVC
+●	Dependency injection -> A way in which you decouple the conventional dependency relations between objects.
+●	Spring can integrate with hibernate and struts.
+●	Spring boot is a layer on top of Spring framework. It reduces configuration part for developers.
+●	If we are using just spring, we would have to deploy the war file on to a separate server(tomcat) to run the application. But it spring boot we would have jar file instead of war file and it will have embedded server in it. You can run this on any JVM.
+●	Spring will provide -> spring-boot-starter-web or spring-boot-starter-jdbc. Spring boot will do the configuration for you. If we want to change configuration we will have to change application.properties
+●	Dependency injection container
+●	@Component class HitachiHD implements HardDrive{...}
+●	class Laptop { @Autowired HardDrive obj1;}
+●	Dependency injection will help in loose coupling and aides in unit testing.
+
 <!--
 ### Markdown
 
