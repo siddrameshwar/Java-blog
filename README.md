@@ -1,4 +1,4 @@
-## Java tutorials
+## Java and Spring
 <!--
 You can use the [editor on GitHub](https://github.com/siddrameshwar/blog/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
@@ -50,7 +50,7 @@ for(int val: intArray)
 output: 44 25 33                                
 ```
 
-Important points about Java
+## Some Important points about Java
 
 ●	Java also takes care of memory management and it also provides an automatic garbage collector.
 ●	Java is a platform-independent language-> intermediate byte code
@@ -72,24 +72,7 @@ Important points about Java
 ●	public void myDraw(Shape shape) { shape.draw() }; We can pass any Shape objects or any of its children objects.
 
 
-Spring
-
-What does Spring framework provides?
-Application context and dependency injection
-Data access(JDBC was pain)
-Spring MVC
-Dependency injection -> A way in which you decouple the conventional dependency relations between objects.
-Spring can integrate with hibernate and struts.
-Spring boot is a layer on top of Spring framework. It reduces configuration part for developers.
-If we are using just spring, we would have to deploy the war file on to a separate server(tomcat) to run the application. But it spring boot we would have jar file instead of war file and it will have embedded server in it. You can run this on any JVM.
-Spring will provide -> spring-boot-starter-web or spring-boot-starter-jdbc. Spring boot will do the configuration for you. If we want to change configuration we will have to change application.properties
-Dependency injection container
-@Component class HitachiHD implements HardDrive{...}
-class Laptop { @Autowired HardDrive obj1;}
-Dependency injection will help in loose coupling and aides in unit testing.
-
-
-Spring
+## Spring
 
 ●	What does Spring framework provides?
 ○	Application context and dependency injection
@@ -104,6 +87,10 @@ Spring
 ●	@Component class HitachiHD implements HardDrive{...}
 ●	class Laptop { @Autowired HardDrive obj1;}
 ●	Dependency injection will help in loose coupling and aides in unit testing.
+
+•	JPA is interface and Hibernate is Implementation of ORM
+•	DAO service helps us to store the contents of class to table. We use @Repository annotation for it.
+•	Most Important feature of Spring Framework is Dependency injection. At the core of Spring modules in Dependency injection or IOC Inversion of control. If we don't define dependency then we can't test our application. Spring takes care of all its beans and their dependencies. DI can be used to build Loosely coupled applications. Easy to test and maintain
 
 <!--
 ### Markdown
