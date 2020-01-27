@@ -49,6 +49,26 @@ for(int val: intArray)
                                    
 output: 44 25 33                                
 ```
+
+Java also takes care of memory management and it also provides an automatic garbage collector.
+Java is a platform-independent language-> intermediate byte code
+The name of the class defined by the program is HelloWorld, which is same as name of file(HelloWorld.java). This is not a coincidence. In Java, all codes must reside inside a class and there is at most one public class which contain main() method.
+By convention, the name of the main class(class which contain main method) should match the name of the file that holds the program.
+Statically typed language -> specify variable type unlike in dynamically typed languages like python and ruby.
+Strings are immutable.
+Enums are used when we know all possible values at compile time, such as choices on a menu, rounding modes, command line flags, etc. It is not necessary that the set of constants in an enum type stay fixed for all time.
+What is heap?
+Methods and variables can be of 4 types. But class and Interfaces can have only 2 - public, default. Nested interfaces and classes can have all access specifiers.
+The byte stream created is platform independent.
+Static data members and transient data members are not saved via Serialization process
+The Serialization runtime associates a version number with each Serializable class called a SerialVersionUID
+ArrayList is better for storing and accessing data. ArrayList internally uses a dynamic array to store the elements.
+LinkedList is better for manipulating data. LinkedList internally uses a doubly linked list to store the elements.
+Final methods can not be overridden. private methods are not overridden and so are static methods.
+Dynamic method dispatch allow Java to support overriding of methods which is central for run-time polymorphism.
+In you don’t have any common code between rectangle and circle then go with interface, otherwise use Abstract class.
+public void myDraw(Shape shape) { shape.draw() }; We can pass any Shape objects or any of its children objects.
+
 <!--
 ### Markdown
 
