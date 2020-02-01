@@ -51,7 +51,7 @@ output: 44 25 33
 ```
 
 ## Some Important points about Java
-
+```markdown
 ●	Java also takes care of memory management and it also provides an automatic garbage collector.
 ●	Java is a platform-independent language-> intermediate byte code
 ●	The name of the class defined by the program is HelloWorld, which is same as name of file(HelloWorld.java). This is not a coincidence. In Java, all codes must reside inside a class and there is at most one public class which contain main() method.
@@ -70,10 +70,10 @@ output: 44 25 33
 ●	Dynamic method dispatch allow Java to support overriding of methods which is central for run-time polymorphism.
 ●	In you don’t have any common code between rectangle and circle then go with interface, otherwise use Abstract class.
 ●	public void myDraw(Shape shape) { shape.draw() }; We can pass any Shape objects or any of its children objects.
-
+```
 
 ## Spring
-
+```markdown
 ●	What does Spring framework provides?
 ○	Application context and dependency injection
 ○	Data access(JDBC was pain)
@@ -91,10 +91,12 @@ output: 44 25 33
 •	JPA is interface and Hibernate is Implementation of ORM
 •	DAO service helps us to store the contents of class to table. We use @Repository annotation for it.
 •	Most Important feature of Spring Framework is Dependency injection. At the core of Spring modules in Dependency injection or IOC Inversion of control. If we don't define dependency then we can't test our application. Spring takes care of all its beans and their dependencies. DI can be used to build Loosely coupled applications. Easy to test and maintain
+```
 
-
+```markdown
 Integer.toBinaryString() //will convert number into binary value
 str1.compareTo(str2)  // will do lexicographic comparison
+```
 <!--
 ### Markdown
 
