@@ -92,6 +92,9 @@ output: 44 25 33
 •	DAO service helps us to store the contents of class to table. We use @Repository annotation for it.
 •	Most Important feature of Spring Framework is Dependency injection. At the core of Spring modules in Dependency injection or IOC Inversion of control. If we don't define dependency then we can't test our application. Spring takes care of all its beans and their dependencies. DI can be used to build Loosely coupled applications. Easy to test and maintain
 
+
+Integer.toBinaryString() //will convert number into binary value
+str1.compareTo(str2)  // will do lexicographic comparison
 <!--
 ### Markdown
 
