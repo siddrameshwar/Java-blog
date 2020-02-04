@@ -49,6 +49,10 @@ for(int val: intArray)
                                    
 output: 44 25 33                                
 ```
+```markdown
+copyOfRange(int[] original, int from, int to)
+Copies the specified range of the specified array into a new array.
+```
 
 ## Some Important points about Java
 ```markdown
