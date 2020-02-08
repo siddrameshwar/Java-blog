@@ -111,7 +111,7 @@ assertNotNull, assertEquals, assertTrue, assertFalse
 
 class ClassUnderTestTest {
     @InjectMocks   //It will inject the mock classes that we created for the interfaces inside of this class(interface) into the class
-    ClassUnderTest
+    ClassUnderTest objectOfClassUnderTet
     
     @Mock
     Interface interface;
