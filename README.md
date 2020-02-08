@@ -103,6 +103,30 @@ Copies the specified range of the specified array into a new array.
 Integer.toBinaryString() //will convert number into binary value
 str1.compareTo(str2)  // will do lexicographic comparison
 ```
+
+```markdown
+## Unit Testing using Junits and Mockito
+
+assertNotNull, assertEquals, assertTrue, assertFalse
+
+class ClassUnderTestTest {
+    @InjectMocks   //It will inject the mock classes that we created for the interfaces inside of this class(interface) into the class
+    ClassUnderTest
+    
+    @Mock
+    Interface interface;
+    
+    @BeforeEach
+    void setUp() throws exception {
+        MockitoAnnotations.initMocks(this); //For mockito to instatiate an object of the class under test. 
+    }
+
+    @Test
+    testMethodTest() {
+        Object object = new Object();
+        when( interface.getMethod( anyString() ).thenReturn( object );
+    }
+}
 <!--
 ### Markdown
 
