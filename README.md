@@ -107,7 +107,15 @@ str1.compareTo(str2)  // will do lexicographic comparison
 ```markdown
 ## Unit Testing using Junits and Mockito
 
-assertNotNull, assertEquals, assertTrue, assertFalse
+Annotations for mocking
+assertNotNull, assertEquals, assertTrue, assertFalse, BeforeEach, BeforeAll.
+
+Stub is a kind of fake Object but we do not return any value(Logger). We implement the stub because we are not testing logger and we
+don't want to spend time running it.
+But for Mock object we return a mock object on which we do assertion. We are not testing the methods of the method for which we return 
+mock objects, but we need the result of the object for the next lines of code or testing.
+
+Try to include both positive and negative test cases. 
 
 class ClassUnderTestTest {
     @InjectMocks   //It will inject the mock classes that we created for the interfaces inside of this class(interface) into the class
@@ -123,8 +131,19 @@ class ClassUnderTestTest {
 
     @Test
     testMethodTest() {
-        Object object = new Object();
+        Object object = new Object("name");
         when( interface.getMethod( anyString() ).thenReturn( object );
+        assertEquals("name", interface.getMethod().getName());
+    }
+    
+    //ObjectNotFoundException should be thrown if interface.getMethod() returns null;
+    @Test
+    testMethodTest_ObjectNotFoundException {
+        //We do want others to change the exception type we are throwing
+        when( interface.getMethod( anyString() ).thenReturn( null );
+        assertThrows(ObjectNotFoundException, ()-> {
+            interface.getMethod("test");
+        }
     }
 }
 ```
