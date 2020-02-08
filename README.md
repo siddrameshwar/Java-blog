@@ -127,6 +127,7 @@ class ClassUnderTestTest {
         when( interface.getMethod( anyString() ).thenReturn( object );
     }
 }
+```
 <!--
 ### Markdown
 
